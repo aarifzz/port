@@ -1,0 +1,110 @@
+.aboutt{
+    position: relative;
+    font-size: 6.6em;
+    right:158px;
+    bottom: 100px;
+    font-family: 'myfont';
+    color:#777777;
+    animation: slide-in-left 2s ease;
+    animation-timeline:view() ;
+    animation-range: entry 0;
+
+}
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.aboutme{
+    position: relative;
+    text-align: left;
+    bottom: 170px;
+    color:#777777;
+    left: 520px;
+    font-size: 1.4em;
+    font-family:"smallfont";
+    animation: slide-in-right 20s ease;
+    animation-timeline:view() ;
+    animation-range: entry 0;
+}
+@keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.lap{
+position: relative;
+bottom: 100px;
+right: px;
+width: 500px;  /* Set a width for the image */
+height: 500px; /* Set the same height for the image */
+border-radius: 50%; /* Makes the image circular */
+object-fit: cover;  /* Ensures the image covers the entire area without distortion */
+border: 3px solid black; 
+background-color:#777777;;
+animation: fade 2s ease;
+animation-timeline:view() ;
+animation-range: entry 0;
+transition: 1s ease;
+
+}
+
+.works{
+    position: relative;
+    font-family: 'myfont';
+    font-size: 6.6em;
+    left: 400px;
+    bottom: 100px;
+    color:#777777;
+    animation: slide-in-right 100s forwards;
+animation-timeline:view() ;
+animation-range: entry 0;
+transition: 0,3s ease;
+}
+.worksc{
+    position: relative;
+    font-family: '';
+    font-size: 1.4em;
+    color:#777777;
+    left: 0px;
+    bottom: 100px;
+    text-align: left;
+    animation: slide-in-right 2s ease;
+    animation-timeline:view() ;
+    animation-range: entry 0;
+    transition: 1s ease;
+}
+@keyframes fade {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+.image{
+    animation-timeline:view() ;
+animation-range: entry 50% cover 50%;
+transition: 1s ease;
+}
+.worksc{
+    font-family: smallfont;
+    animation: slide-in-left 2s both;
+    animation-timeline:view() ;
+    animation-range: entry 50% cover 50%;
+    transition: 1s ease;
+}
+
+

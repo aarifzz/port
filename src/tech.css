@@ -1,0 +1,71 @@
+.tech{
+    position: relative;
+    font-family: 'myfont';
+    font-size: 9em;
+    animation: up 2s ease;
+    animation: fade 2s both;
+    animation-timeline:view() ;
+    animation-range: entry 50% cover 50%; 
+transition: 1s ease;
+}
+.techc{
+    text-align: left;
+    width: 900px;
+    font-size: 1.7em;
+
+    animation: slide 2s both;
+    transition: 0.3s ease;
+    padding-bottom:50px ;
+}
+.icons {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: white;
+    padding: 20px 0 ;
+    
+
+  }
+.html,.js,.react,.python,.css,.java{
+    width: 100px;
+    height: 100px;
+}
+
+
+@keyframes scroll {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .scrollcontent{
+      display: inline-block;
+
+      animation: 20s scroll infinite linear;
+  }
+  .scrollcontent img {
+margin: 0 40px;
+
+
+  }
+
+  @keyframes up {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes slide{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}

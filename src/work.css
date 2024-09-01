@@ -1,0 +1,150 @@
+body{
+    color:;
+}
+ul li{
+    list-style: none;
+}
+/* .line1{
+    position: relative;
+    background-color: aqua;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    left: px;
+}
+.line2{
+    position: relative;
+    background-color: aqua;
+    border: 1px solid black;
+    width: 90%;
+    left: 80px;
+} */
+.topic1{
+    /* position: relative; */
+    /* right: 400px; */
+    font-size: 3em;
+    /* bottom: 250px; */
+    font-family: 'myfont';
+    display: flex;
+    justify-content: first baseline;
+    padding-left: 50px;
+}
+.topic1d{
+    /* position: relative; */
+    left: 100px;
+    bottom: 300px;
+    /* width:1000px; */
+    text-align: left;
+    padding-left: 50px;
+    
+}
+button{
+    /* position: relative;
+    left: 500px;
+    bottom: 100px; */
+    font-family: 'smallfont';
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.772);
+    transition: 0.6s ease;
+}
+button:hover{
+    background-color:#999999;
+    color: black;
+}
+.work1{
+    /* position: relative; */
+    cursor: pointer;
+    /* top: 30px; */
+    border-radius: 30px;
+    border: 1px solid #0077b6;
+    background-color:#999999;
+    color:black;
+
+    height: 400px;
+    
+}
+
+.main{
+    width: 100%;
+    position: relative;
+    margin-bottom: 110px;
+    
+}
+/* .main:hover{
+    background-color: black;
+    border-radius: 30px;
+    
+} */
+
+.memory{
+    width: 360px;
+    height: 220px;    
+
+    /* position: relative; */
+    /* left: 40px;
+    top: 300px; */
+    /* width: 200px;
+    height: 200px;*/
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 1000;
+    animation: fade 2s both;
+    animation-timeline:view() ;
+    animation-range: entry 50% cover 50%;
+}
+.memorycontainer{
+    position:absolute;
+
+    border-radius: 10px;
+        /* position: relative; */
+        top: 67px;
+        right: 37px;
+
+}
+.img .html, 
+.img .css, 
+.img .js {
+    width: 40px;
+    height:40px;
+    border-radius: 5px;
+    margin-right: 20px;
+    /* Add any other shared styles here */
+}
+.img{
+    width: 40px;
+    height:40px;
+    border-radius: 5px;
+    margin-right: 20px;
+    display: flex;
+    padding-left: 20px;
+    gap: 0;
+    transition: 1s ease;
+}
+.img:hover{
+    transform: translateY(-10px);
+}
+/* .img{
+    position: relative;
+    right: 370px;
+    bottom: 300px;
+    
+} */
+.divv{
+    width: 65%;
+    animation: fade 2s both;
+    animation-timeline:view() ;
+    animation-range: entry 50% cover 50%;
+    
+}
+.div1{
+width: 100%;
+display:flex ;
+justify-content: space-between;
+
+}
+

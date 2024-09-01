@@ -1,0 +1,127 @@
+.container{
+    position: relative;
+    background-color:#999999;
+    border: 1px solid black;
+    height: 600px;
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden;
+    
+
+}
+
+.fd{
+    position: relative;
+    bottom: 100px;
+    font-size: 11em;
+    font-family: 'myfont';
+    animation: slidy 2s both;
+
+    transition: 1s ease;
+    color: black;
+
+}
+
+  @keyframes fade{
+    from{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to{
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
+
+
+.fd2{
+    position: relative;
+    bottom: 250px;
+  font-size: 11em;
+  font-family: 'myfont';
+  color: rgba(0, 0, 0, 0.066);
+  z-index: 0;
+}
+.fd3{
+    
+    position: relative;
+    bottom: 400px;
+  font-size: 11em;
+  font-family: 'myfont';
+  color: rgba(0, 0, 0, 0.066);
+  z-index: 0;
+}
+.bg{
+    position: relative;
+    bottom:1000px;
+    right: 30px;
+    width: 550px;
+    height: 550px;
+    z-index: 1000;
+    animation: opac 2s forwards;
+    transition: 4s ease;
+    
+}
+.q1{
+    font-family: 'smallfont';
+    position: relative;
+    bottom:1400px;
+    left: 50px;
+    font-size: 1.4em;
+    text-align: left;
+    animation: slide 2s both;
+    transition: 0.3s ease;
+    color:black;
+}
+.q2{
+    text-align: left;
+    position: relative;
+    bottom:1300px;
+    left: 735px;
+    font-size: 1.4em;
+    animation: slidx 2s both;
+    transition: 0.3s ease;
+    color:black;
+ 
+}
+@keyframes slide{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+@keyframes slidx{
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+@keyframes slidy{
+  from{
+    transform: translateY(100%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+}
+
+@keyframes opac{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 475px) {
+  .fd{
+    font-size: 6em;
+    width: 100%;
+  }
+}
